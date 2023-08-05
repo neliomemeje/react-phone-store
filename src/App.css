@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+:root {
+    --main-blue: #646ddf;
+    --light-blue: #8791b8;
+    --main-white: #f3f3f3;
+    --main-dark: #282e36;
+    --main-yellow: #ffa400;
+    --light-yellow: #cbaa6d;
+    }
+
+body {
+    font-family: 'Oswald', sans-serif !important;
+    background: var(--main-white) !important;
+    color: var(--main-dark);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-title {
+    font-family: 'Caveat', cursive;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-blue {
+    color: var(--main-blue);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+    background: var(--main-blue);
 }
 
-.App-link {
-  color: #61dafb;
+nav .nav-link {
+    font-size: 1.4rem;
+    color: var(--main-white)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:disabled {
+    opacity: 0.5;
+}
+
+.count.btn:hover {
+    transform: scale(1.1);
+}
+
+.count.btn:active {
+    transform: scale(1);
+}
+
+.fa-trash:hover {
+    transform: scale(1.1);
+}
+
+.fa-trash:active {
+    transform: scale(1);
+}
+
+span.text-title {
+    font-size: 1.5rem;
 }
