@@ -32,6 +32,31 @@ nav .nav-link {
     color: var(--main-white)
 }
 
+span#cart-link {
+    position: relative;
+}
+
+div.cart-item {
+    position: absolute;
+    top: -18px;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--main-white);
+    transition: all .5s ease-in-out;
+}
+
+div.cart-item:hover {
+    color: var(--main-yellow)
+}
+
+.cart-btn:hover div.cart-item{
+color: var(--main-yellow)
+}
+
 button:disabled {
     opacity: 0.5;
 }
