@@ -13,10 +13,8 @@ export const Button = styled.button`
   margin: 0.3rem 0.5rem 0.3rem 0;
   transition: all 0.5s ease-in-out;
   &:hover {
-    color: ${(props) =>
-      props.$cart ? "var(--main-dark)" : "var(--main-yellow)"};
     background: ${(props) =>
-      props.$cart ? "var(--main-yellow)" : "var(--main-dark)"};
+      props.$cart ? "var(--main-blue)" : "var(--light-blue)"};
   }
 `;
 
