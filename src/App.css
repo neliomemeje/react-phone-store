@@ -80,3 +80,33 @@ button:disabled {
 span.text-title {
     font-size: 1.5rem;
 }
+
+@media (max-width: 500px) { 
+    .top-column {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+    .order-container .product{
+        width: 3rem;
+        height: 3rem;
+    }
+    .title{
+        font-size: 13px;
+    }
+    .text-title {
+        letter-spacing: 2px;
+    }
+    span.text-title {
+        font-size: 1.2rem;
+    }
+    button.count.btn.btn-outline-secondary{
+        padding: 0 8px;
+        border: none;
+    }
+    strong.order-count{
+        font-size: 14px;
+    }
+    .fas.fa-trash.fa-2x.text-danger{
+        font-size: 18px;
+    }
+}

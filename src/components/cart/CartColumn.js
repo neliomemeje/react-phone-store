@@ -4,12 +4,12 @@ function CartColumn() {
   return (
     <div className="container-fluid mb-3">
       <div className="row text-uppercase text-center">
-        <div className="col-2 mx-auto mb-3">products</div>
-        <div className="col-2 mx-auto mb-3">name</div>
-        <div className="col-2 mx-auto mb-3">price</div>
-        <div className="col-2 mx-auto mb-3">quantity</div>
-        <div className="col-2 mx-auto mb-3">remove</div>
-        <div className="col-2 mx-auto mb-3">total</div>
+        <div className="col-2 mx-auto mb-3 top-column">products</div>
+        <div className="col-2 mx-auto mb-3 top-column">name</div>
+        <div className="col-2 mx-auto mb-3 top-column">price</div>
+        <div className="col-2 mx-auto mb-3 top-column">quantity</div>
+        <div className="col-2 mx-auto mb-3 top-column">remove</div>
+        <div className="col-2 mx-auto mb-3 top-column">total</div>
       </div>
     </div>
   );

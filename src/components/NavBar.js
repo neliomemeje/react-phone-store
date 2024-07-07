@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../icon.png";
 import { Button } from "./StyledEl";
 import { ProductConsumer } from "../context";
 
@@ -12,7 +11,7 @@ function NavBar() {
         return (
           <nav className="navbar navbar-expand-sm navbar-dark px-sm-5">
             <Link to="/">
-              <img src={logo} alt="logo" className="navbar-brand" />
+              <img src={'icon.png'} alt="logo" className="navbar-brand" />
             </Link>
             <ul className="navbar-nav">
               <li className="nav-item ms-5">

@@ -7,16 +7,17 @@ function CartList({ cart, updateCount, removeProduct }) {
         const { id, img, title, price, count, total } = item;
         return (
           <div className="container-fluid" key={id}>
-            <div className="row text-center d-flex align-items-center">
+            <div className="row text-center d-flex align-items-center order-container">
               <div className="col-2 mx-auto mb-3">
                 <img
-                  style={{ width: "5rem", height: "5rem" }}
-                  className="img-fluid"
+                  width={80}
+                  height={80}
+                  className="img-fluid product"
                   src={img}
                   alt={title}
                 />
               </div>
-              <div className="col-2 mx-auto mb-3">{title}</div>
+              <div className="col-2 mx-auto mb-3 title">{title}</div>
               <div className="col-2 mx-auto mb-3">
                 <strong>
                   <span className="text-title">${price}</span>
@@ -25,16 +26,16 @@ function CartList({ cart, updateCount, removeProduct }) {
               <div className="col-2 mx-auto mb-3">
                 <div className="d-flex justify-content-center">
                   <button
-                    className="count btn btn-outline-secondary"
+                    className="count btn btn-outline-secondary border-0"
                     onClick={() => updateCount(id, "dec")}
                   >
                     <strong>-</strong>
                   </button>
-                  <button className="count btn btn-light p-2 ">
-                    <strong>{count}</strong>
-                  </button>
+                  <span className="count p-2 ">
+                    <strong className="order-count">{count}</strong>
+                  </span>
                   <button
-                    className="count btn btn-outline-secondary"
+                    className="count btn btn-outline-secondary border-0"
                     onClick={() => updateCount(id, "inc")}
                   >
                     <strong>+</strong>
